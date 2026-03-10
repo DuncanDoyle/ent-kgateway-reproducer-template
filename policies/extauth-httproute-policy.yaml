@@ -1,0 +1,19 @@
+apiVersion: enterprisekgateway.solo.io/v1alpha1
+kind: EnterpriseKgatewayTrafficPolicy
+metadata:
+  name: extauth-httproute-policy
+  namespace: default
+spec:
+  targetRefs:
+    - name: api-example-com
+      group: gateway.networking.k8s.io
+      kind: HTTPRoute
+  # targetSelectors:
+  # - group: gateway.networking.k8s.io
+  #   kind: HTTPRoute
+  #   matchLabels:
+  #     extauth: basic
+  entExtAuth:
+    authConfigRef:
+      name: basic-auth
+      namespace: kgateway-system
