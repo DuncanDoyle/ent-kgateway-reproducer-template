@@ -8,7 +8,7 @@ export ENT_KGATEWAY_SYSTEM_NAMESPACE="kgateway-system"
 
 if [ -z "$ENT_KGATEWAY_LICENSE_KEY" ]
 then
-   echo "Solo Enterprise for Kgateway License Key not specified. Please configure the environment variable 'SEFK_LICENSE_KEY' with your Solo Enterprise for Kgateway License Key."
+   echo "Solo Enterprise for Kgateway License Key not specified. Please configure the environment variable 'ENT_KGATEWAY_LICENSE_KEY' with your Solo Enterprise for kgateway License Key."
    exit 1
 fi
 
