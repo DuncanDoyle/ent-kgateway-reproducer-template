@@ -1,9 +1,9 @@
 
 #!/bin/sh
 
-export ENT_KGATEWAY_VERSION="2.1.2"
+export ENT_KGATEWAY_VERSION="2.3.4"
 export ENT_KGATEWAY_HELM_VALUES_FILE="ent-kgateway-helm-values.yaml"
-export K8S_GW_API_VERSION="v1.4.0"
+export K8S_GW_API_VERSION="v1.6.1"
 export ENT_KGATEWAY_SYSTEM_NAMESPACE="kgateway-system"
 
 if [ -z "$ENT_KGATEWAY_LICENSE_KEY" ]
